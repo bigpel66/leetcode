@@ -1,5 +1,5 @@
 ### Most of problems had been solved by Golang.
-### Every problem has a comment to solve.
+### Every problem has a bunch of comment to solve.
 
 <br/>
 
