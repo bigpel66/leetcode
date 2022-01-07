@@ -2,13 +2,11 @@
 //
 // https://leetcode.com/problems/insertion-sort-list/description/
 
-//
 // Definition for singly-linked list.
 // type ListNode struct {
 //     Val int
 //     Next *ListNode
 // }
-//
 
 // insertionSortList function sort the element of ListNode with ascending order.
 // ListNode will be sorted by insertion sort as its function name.

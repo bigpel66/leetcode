@@ -2,13 +2,11 @@
 //
 // https://leetcode.com/problems/reorder-list/
 
-//
 // Definition for singly-linked list.
 // type ListNode struct {
 //     Val int
 //     Next *ListNode
 // }
-//
 
 // reorderList function performs just as its name implies.
 // When list exists such as 1 -> 2 -> 3 -> 4, the result of this function becomes 1 -> 4-> 2 -> 3.

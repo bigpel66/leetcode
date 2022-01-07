@@ -2,14 +2,12 @@
 //
 // https://leetcode.com/problems/binary-tree-tilt/
 
-//
 // Definition for a binary tree node.
 // type TreeNode struct {
 //     Val int
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-//
 
 // search function search the absolute difference on global variable result.
 // Each node find the difference of the left and right child, and add to the result.

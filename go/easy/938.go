@@ -2,14 +2,12 @@
 //
 // https://leetcode.com/problems/range-sum-of-bst/
 
-//
 // Definition for a binary tree node.
 // type TreeNode struct {
 //     Val int
 //     Left *TreeNode
 //     Right *TreeNode
 // }
-//
 
 // accumulate function accumulate the sum of the given range.
 // The given range is inclusive.

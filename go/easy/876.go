@@ -7,7 +7,6 @@
 //     Val int
 //     Next *ListNode
 // }
-//
 
 // middleNode function finds the Middle Node from the given linked list.
 // The specified fast node is incremented by 2.

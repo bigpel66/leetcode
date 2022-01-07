@@ -2,7 +2,6 @@
 //
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 
-//
 // Definition for a Node.
 // type Node struct {
 //     Val int
@@ -10,7 +9,6 @@
 //     Right *Node
 //     Next *Node
 // }
-//
 
 // connect function connects current node to the next node.
 // Recursion has been used to connect the next node.
