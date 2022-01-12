@@ -10,7 +10,7 @@
 // }
 
 // sumRootToLeaf function accumulates all of the numbers root to leaf as a binary.
-// Preorder travers is required to calculate the root to leaf number.
+// Preorder traverse is required to calculate the root to leaf number.
 func sumRootToLeaf(root *TreeNode) int {
 	var accumulate func(int, *TreeNode) int
 	accumulate = func(bin int, node *TreeNode) int {
