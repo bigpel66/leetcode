@@ -6,15 +6,15 @@
 // The player can jump to 1 step backward and forward, the point which number is same.
 // Thus, there are 3 cases for each step. This will be solved by the BFS Queueing.
 // For each queueing is for a 1 step, and checks whether reaching to the final point is possible or not.
-// If it is return the steps, or enque the possible 3 cases from the point to the queue.
+// If it is, return the steps. Or enque the possible 3 cases from the point.
 // The queued 3 cases will be processed on the next step naturally (the cases on the same step will be proessed first due to the queue).
-// Not to visit the duplicated point, visitd hash map has been used.
+// Not to visit the duplicated point, visitd slice has been used.
 // Also, for jumping to the same value, position hash map has been used.
-// The position map always have to be resovled only once the value entered. Thus, resolvedhash map has been used.
+// The position map always have to be resovled only once the value entered. Thus, resolved hash map has been used.
 func minJumps(arr []int) int {
 	steps := 0
 	queue := append([]int{}, 0)
-	visited := make(map[int]bool)
+	visited := make([]bool, len(arr))
 	resolved := make(map[int]bool)
 	position := make(map[int][]int)
 	visited[0] = true
@@ -41,11 +41,11 @@ func minJumps(arr []int) int {
 					}
 				}
 			}
-			if !visited[index+1] && index+1 < len(arr) {
+			if index+1 < len(arr) && !visited[index+1] {
 				queue = append(queue, index+1)
 				visited[index+1] = true
 			}
-			if !visited[index-1] && index-1 >= 0 {
+			if index-1 >= 0 && !visited[index-1] {
 				queue = append(queue, index-1)
 				visited[index-1] = true
 			}
